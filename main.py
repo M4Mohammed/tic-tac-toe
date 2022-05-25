@@ -8,14 +8,8 @@ def get_input():
         except ValueError:
             print('Invalid input. Try again...')
 
-def draw_board(board):
-    for i in range(9):
-        print(board[i], end=' ')
 
-        if(i % 3 == 0 and i != 8):
-            print("\n" , '-' * 8)
-        elif i != 9:
-            print('|' , end=' ')
+#TODO "Draw an actual board"
 
 
 magic_square = [8, 1, 6, 3, 5, 7, 4, 9, 2]
@@ -54,7 +48,6 @@ while not win:
                 break
             
     n += 1
-    draw_board(board)
-    # print(board[0:3])
-    # print(board[3:6])
-    # print(board[6:9])
+    print(board[0:3])
+    print(board[3:6])
+    print(board[6:9])
